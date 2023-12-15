@@ -1,0 +1,20 @@
+오픈소스 서버인 깃허브에서 협업 방식
+github, gitlab. bitbucket
+대표적 오픈소스
+파이썬,사이킷런,파이토치,텐서플로,mysql,몽고 db
+오픈 소스 의미
+소프트웨어의 소스코드를 자유롭게 읽고, 수정 재배포 가능
+
+커밋자료와 해당 stash 항목 차이 표시
+$ git stash show
+$ git stash show -p
+임시 저장 내용 삭제
+$ git stash drop
+저장 내용 상제
+$ git stash drop stash@{n}
+모두 제거
+$git stash clear
+목록보기
+$ git stash list
+임시정장소 내용 반영
+$ git stash apply --index
