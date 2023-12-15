@@ -1,0 +1,24 @@
+원격 저장소 생성 - 저장소 목록 보기
+
+원격 저장소 복제
+$ got clone https://github.com/soonho123/.soonho123.git
+$ got clone https://github.com/soonho123/.soonho123.git.
+$ got clone https://github.com/soonho123/.soonho123.git mytest
+
+원격 저장소 관리
+$ git remote - v
+@git remote show origin
+$git remote rename origin org
+@git remote rm org
+
+vs code로 원격 저장소 관리
+clone git  repository 클릭
+
+원격 저장소 수정 사항 pull로 지역 저장소로 가져오기 + 병합하기
+$ git fetch origin main
+! git fetch
+$ git merge origin/main
+
+지역 저장소 수정 사항 push로 원격 저장소 보내기
+$ git push origin main
+$ git push
