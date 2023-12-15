@@ -1,0 +1,17 @@
+기존 브랜치에서 main 과 rebase 병합
+$ git checkout topic
+$ git rebase main
+
+main으로 돌아와 fast - forward 병합
+$ git checkout main
+$ git merge topic
+
+이전 커밋 head ~ 2 head까지 각각 커밋 수정
+$ git rebase --interactive head ~3
+p(ink) : 해당 커밋 수정 x
+r(eword): 커밋 메시지 다시 작성
+s(quash): 커밋을 이전 커밋에 결합
+d(rop) : 커밋 자체 삭제
+
+취소 revert 조건
+nothing to commit, working tree clean
