@@ -1,0 +1,23 @@
+ 현재 브랜치에서 하나만 생성해서 병합
+ $ git merge --squash hotfix
+ 무조건 3-way병합 
+ $ git merge --no ff hotfix
+ fast-foward인 경우만 병합
+  $ git merge --no only hotfix
+
+
+  편집기로 최신 커밋 수정
+  -$ git commit --amend
+  파일 수장 후 추가 수정 없이 최신커밋으로 수정
+  -$ git commit --amend --no -edit
+  최신 커밋 메세지 수정
+  -$ git commit --amend-m'new message'
+  이전 커밋 수정
+  -$ git rebase --interactive head ~3
+
+  확장 git graph 설치
+  vs code에서 파일 추가 커밋은
+  changes, staged changes
+  git graph
+  각 커밋
+ 
